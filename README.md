@@ -1,26 +1,14 @@
 # automation-with-testcafe-simple-project
 
-<h1 align="center">automation-with-testcafe-simple-project👋</h1>
-
- 
-The goal of this project was to get a feel of [Testcafe](https://devexpress.github.io/testcafe/) framework. Simple WEB UI tests using Page Object pattern. The tests in this project use the demo app https://opencart.abstracta.us/ .
+The goal of this project is to get a feel of [Testcafe](https://devexpress.github.io/testcafe/) Automation Framework  and learn how to 
+work with asynchronous JavaScript.
+Simple WEB UI tests using Page Object pattern. 
+The tests in this project use the demo app https://opencart.abstracta.us/ 
 
 ## Install
-clone or download this repo 
-install depende
-```sh
-npm install
-```
+1. clone or download this repo 
+2. install dependencies `npm i`
 
 ## Run tests
 
-```sh
-npm run test
-```
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+`npm test` to see in the 
