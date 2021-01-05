@@ -1,15 +1,13 @@
-<h1 align="center">Welcome to workshop 👋</h1>
-<p>
-  <a href="https://www.npmjs.com/package/workshop" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/workshop.svg">
-  </a>
-  <a href="#" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-  </a>
-</p>
+# automation-with-testcafe-simple-project
+
+<h1 align="center">automation-with-testcafe-simple-project👋</h1>
+
+ 
+The goal of this project was to get a feel of [Testcafe](https://devexpress.github.io/testcafe/) framework. Simple WEB UI tests using Page Object pattern. The tests in this project use the demo app https://opencart.abstracta.us/ .
 
 ## Install
-
+clone or download this repo 
+install depende
 ```sh
 npm install
 ```
