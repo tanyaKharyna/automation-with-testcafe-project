@@ -11,8 +11,7 @@ const currencyData = require('../data/currencies.json');
 fixture `Tests related to menu and navigation`
        .page `http://opencart.abstracta.us/`
 
-       
-       
+         
        currencyData.forEach(data => {
          test(`should change the currency ${data.name}`, async t => {
          await indexPage.menu.changeCurrency(data.name)

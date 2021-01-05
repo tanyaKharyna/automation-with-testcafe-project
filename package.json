@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/register.e2e.js"
+    "test": "testcafe chrome tests/login.e2e.js"
   },
   "author": "",
   "license": "ISC",
