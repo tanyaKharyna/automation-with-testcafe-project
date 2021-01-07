@@ -15,13 +15,13 @@ currencyData.forEach(data => {
          .expect(menu.chosenCurrency.innerText).contains(data.symbol);});
 });
 
-test('should return no serch results', async t => {
+test('should return no search results', async t => {
    await t
       .click(indexPage.menu.searchButton)
       .expect(searchResultPage.noResultsMsg.innerText).eql(msg.noSearchResuls);
       });
 
-test('should return searched results if product is found ', async t => {
+test('should return a results for the searched keywork', async t => {
    const getLocation = ClientFunction(() => document.location.href.toString());
    const product = 'MacBook';
       await indexPage.menu.search(product);
@@ -30,7 +30,7 @@ test('should return searched results if product is found ', async t => {
          .expect(getLocation()).contains(product);
 });
 
-test('should show message for empty cart', async t => {
+test('should show a message for an empty cart', async t => {
    const message = menu.emptyCartMsg.exists;
    await t
       .expect(menu.cardTotal.innerText).contains(msg.emptyCart)
@@ -38,12 +38,12 @@ test('should show message for empty cart', async t => {
       .expect(message).ok();
 });
 
-test('should show message for empty categories', async t => {
+test('should show a message for empty categories', async t => {
    await menu.chooseCategory('Software');
    await t.expect (categoryPage.noProductsMsg.innerText).eql(msg.emptyCategory);
 });
 
-test('should show two pitures in slider', async t => {
+test('should show two pitures in the slider', async t => {
    await t
       .expect(indexPage.sliderPics.count).eql(2)
       .expect(indexPage.featuredProducts.count).eql(4);

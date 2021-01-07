@@ -24,14 +24,14 @@ test('should add a product to the cart', async t => {
         .expect(productPage.successMsg.visible).ok();
 });
 
-test('should go to the cart', async t => {
+test('should take a user to the cart', async t => {
     await productPage.addToCart();
     await t
         .expect(productPage.menu.cardTotal.innerText).contains(msg.oneProductInCart)
         .expect(productPage.successMsg.visible).ok();
 });
 
-test('should show product name as title', async t => {
+test('should have equal title and product name', async t => {
     const h1 = await productPage.h1.innerText;
     await t.expect(productPage.title.innerText).eql(h1, 'check element text', { allowUnawaitedPromise: true });
 });
