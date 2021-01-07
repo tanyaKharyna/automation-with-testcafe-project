@@ -17,33 +17,7 @@ confirmPassword: $('#input-confirm'),
 consentCheckbox: $(`[name="agree"]`),
 continueButton: $('[value="Continue"]'),
 
-
-async setPassword() {
-  const password = faker.internet.password()
-  await t
-      .typeText(this.password, password)
-      .typeText(this. confirmPassword, password)
-}
-,
-async registerUser(name, lastName, email, telephone, adress, city, postcode, password) {
-  await t
-    .typeText(this.firstName, name)
-    .typeText(this.lastName, lastName)
-    .typeText(this.email, email)
-    .typeText(this.telephone, telephone)
-    .typeText(this.addressLine, adress)
-    .typeText(this.city, city)
-    .typeText(this.postcode, postcode)
-    .click(this.country)
-    .click($('[value="2"]'))
-    .click(this.region)
-    .click($('[value=2]'))
-    .typeText(this.password, password)
-    .typeText(this. confirmPassword, password)
-    .click(this.consentCheckbox)
-    .click(this.continueButton)
-},
-async fakerRegistr() {
+async registerUser() {
   await t
     .typeText(this.firstName, faker.name.firstName())
     .typeText(this.lastName, faker.name.lastName())
@@ -61,6 +35,6 @@ async fakerRegistr() {
     .click(this.consentCheckbox)
     .click(this.continueButton)
 },
-}
+};
 
 export default {...registerPage, ...basePage};

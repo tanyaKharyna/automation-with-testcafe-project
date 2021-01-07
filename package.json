@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/login.e2e.js"
+    "test": "testcafe chrome tests/indexpageAndSearch.e2e.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "faker": "^5.1.0",
     "testcafe": "^1.10.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-testcafe-community": "^1.1.0"
   }
 }

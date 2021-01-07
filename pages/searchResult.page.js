@@ -8,10 +8,6 @@ noResultsMsg: $('p:nth-child(7)'),
 noProductsMsg: $('#content p'),
 breadcrump: $('ul.breadcrumb li:nth-child(2) a'),
 
-
-
-
-
-}
+};
 
 export default {...searchResultPage, ...basePage};

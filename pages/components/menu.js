@@ -1,6 +1,12 @@
 import {Selector as $, t} from 'testcafe';
 import basePage from '../basePage';
 
+
+/**
+   * Menu exists on multiple pages. We'll require it on multiple  
+   * pages if it's necessary for test scenarios.
+   */
+
 const menu = {
   cartButton: $('#cart button'),
   cardTotal: $('#cart-total'),
@@ -24,6 +30,11 @@ const menu = {
       .click(this.searchButton)
   },
 
+ /**
+   * Change currency. We'll pass parameters from prepared 
+   * beforehand .json file
+   */
+
   async changeCurrency(currency) {
     await t
      .click(this.currencyForm)
@@ -35,8 +46,5 @@ const menu = {
       .click($('ul.nav a').withText(`${category}`))
  }
 }
-
-
-
 
 export default { ...basePage, ...menu };

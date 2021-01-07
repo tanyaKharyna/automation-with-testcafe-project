@@ -1,13 +1,8 @@
-import { Selector as $, t } from 'testcafe';
+import { Selector as $ } from 'testcafe';
 import basePage from './basePage';
 
 const categoryPage = {
-noProductsMsg: $('#content p'),
+    noProductsMsg: $('#content p')
+};
 
-
-
-
-
-}
-
-export default {...categoryPage, ...basePage};
+export default { ...categoryPage, ...basePage };

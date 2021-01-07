@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    "testcafe-community"
+  ],
+  "extends":[ "plugin:testcafe-community/recommended",
+    "airbnb-base/legacy"],
+  "rules": {
+    "no-trailing-spaces": 1,
+    "indent": ["error", 4],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]    
+    },
+    "parser": "babel-eslint",
+    "ecmaVersion": 7,
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  }
